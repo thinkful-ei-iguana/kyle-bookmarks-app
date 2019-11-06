@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bookmark App</title>
-    <link href="index.css" type="text/type">
+    <link rel= "stylesheet" href="index.css">
 </head>
 <body>
-<header>
-    <h1>My BookMarks</h1>
-    <form class ="bookmark" id="bookmark-form">
-        <button type = "button" id ="new-bookmark"></button>
-        <button type = "menu" id ="filter-by"></button>
-    </form>
+<header><h1>My Bookmarks</h1>
+<button class="button" id="add-new">Add new +</button>
+<select>
+    <option>Filter by rating</option>
+    <option value="1">1 stars</option>
+    <option value="2">2 stars</option>
+    <option value="3">3 stars</option>
+    <option value="4">4 stars</option>
+    <option value="5">5 stars</option>
+</select>
 </header>
-<script src ="index.js" type="text/type"></script>
+<main>
+    <!-- This class will show the title of the bookmarks and the star rating -->
+    <ul class = "bookmarks">
+
+    </ul>
+    
+</main>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src ="index.js"></script>
+<script src ="store.js"></script>
+<script src ="bookmark.js"></script>
+<script  src ="api.js"></script>
 </body>
 </html>
